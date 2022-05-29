@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+  <div class="welcome">
+    <img src="images/logo.jpg">
+    WELCOME TO MYZAKAT</div>
+  <section class="header">
+
+  <div class="menu">
+
+      <a href="">HOME</a>
+      <a href="">ZAKAT TYPE & OUR GOALS</a>
+      <a href="">ZAKAT CALCULATOR</a>
+      <a href="">CONTACT US</a>
+      <a href="">TARGET AREAS</a>
+      <a href="">ZAKAT PAYMENT</a>
+
+  </div>
+
+  <form action="registerpage">
+
+    <head>
+      <center>
+      <h1 style="color:#16918D"> <strong> Contact Us </strong> </h1>
+      <center/>
+    </head>
+
+    <div class="form">
+      <hr>
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Your Name" name="name" id="name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Your Email" name="Email" id="Email" required>
+
+      <label for="Message"><b>Message</b></label>
+      <input type="text2" placeholder="Message" name="Message" id="Message" required>
+      <hr>
+
+      <p>By contacting us you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <button type="submit" class="poop" onclick="popup()"=>Submit</button>
+    </div>
+
+  </form>
+
+  <body/>
+
+<script>
+
+function popup(){
+  alert ("Thank you for your contribution");
+}
+
+</script>
+
+
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+.welcome{
+    display: flex;
+    padding: 0 20%;
+    align-items: center;
+    background-color: white;
+    font-size: 50px;
+    text-align: center;
+    color: #004d00;
+    font-weight: bold;
+  }
+
+  .welcome img{
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .header{
+    height: 3500px;
+    width: 100%;
+    position: relative;
+    top: 0px;
+  }
+
+.menu{
+  position: sticky;
+  top: 0px;
+  background-color:  #04AA6D;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.menu a{
+  font: menu;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  float: left;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 16px 24px;
+
+}
+
+.menu ::after{
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: #004d00;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.menu :hover::after{
+  width: 100%;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  }
+
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+input[type=text2]{
+    width: 100%;
+    padding: 30px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+input[type=text]:focus,input[type=text2]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .form {
+    padding: 16px;
+    background-color: white;
+  }
+
+  .poop {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+b{
+  text-align: left;
+}
+
+</style>
+
+ <html/>
